@@ -24,13 +24,6 @@ module.exports = {
       'warning': '#FF4242',
       'warning-hover': '#d92020',
 
-      // for debugging
-      'debug-red': '#f00',
-      'debug-green': '#0f0',
-      'debug-yellow': '#ff0',
-      'debug-blue': '#00f',
-      'debug-magenta': '#f0f',
-      'debug-cyan': '#0ff',
     },
     fontFamily: {
       'open-sans': 'Open Sans, sans-serif',
