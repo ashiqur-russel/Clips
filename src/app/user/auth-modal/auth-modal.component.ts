@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnDestroy } from '@angular/core';
 import { ModalService } from 'src/app/service/modal.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ModalService } from 'src/app/service/modal.service';
   templateUrl: './auth-modal.component.html',
   styleUrls: ['./auth-modal.component.scss']
 })
-export class AuthModalComponent implements OnInit {
+export class AuthModalComponent implements OnInit, OnDestroy {
 
   showLogin:boolean = true;
 
@@ -14,9 +14,15 @@ export class AuthModalComponent implements OnInit {
 
 ngOnInit(): void {
   this.modal.register('auth');
-  this.modal.register('test')
+  this.modal.register('test');
 }
-  showLoginForm(){
+
+ngOnDestroy(): void {
+  this.modal.unRegister('auth');
+  this.modal.unRegister('test');
+}  
+
+showLoginForm(){
     this.showLogin = true;
   }
 
@@ -29,5 +35,7 @@ ngOnInit(): void {
     event.preventDefault();
     // Your form submission logic goes here
   }
+
+  
 
 }

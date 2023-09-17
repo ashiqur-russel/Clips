@@ -15,6 +15,7 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
     
   }
+ 
   onCloseModal(){
     this.modal.toggleModal(this.modalID)
   }
