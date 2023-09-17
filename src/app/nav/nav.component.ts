@@ -11,7 +11,9 @@ export class NavComponent {
 
   }
 
-  openModal(){
+  openModal($event: Event){
+    $event.preventDefault()
+    
     this.modal.toggleModal()
   }
 
