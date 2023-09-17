@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  onRegister($event : Event){
+$event.preventDefault()
+  }
+
 }
