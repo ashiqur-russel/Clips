@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AuthModalComponent {
 
+  showLogin:boolean = true;
+
+
+  showLoginForm(){
+    this.showLogin = true;
+  }
+
+  
+  showRegisterForm(){
+    this.showLogin = false;
+  }
+
+  onSubmit(event: Event) {
+    event.preventDefault();
+    // Your form submission logic goes here
+  }
+
 }
