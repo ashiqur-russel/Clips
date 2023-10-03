@@ -1,14 +1,11 @@
 <app-modal modalID="auth">
   <p class="text-2xl font-bold" heading>Your Account</p>
-
-  
-  <!-- Login Form -->
- <!--
-   <ng-container *ngIf="showLogin">
-    <app-login></app-login>
-  </ng-container>
-  <ng-container *ngIf="!showLogin">
-    <app-register></app-register>
-  </ng-container>
- -->
+  <app-tabs-container>
+    <app-tabs tabTitle="login">
+      <app-login></app-login>
+    </app-tabs>
+    <app-tabs tabTitle="register">
+      <app-register></app-register>
+    </app-tabs>
+  </app-tabs-container>
 </app-modal>

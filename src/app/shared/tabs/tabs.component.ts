@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-tabs',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabs.component.scss']
 })
 export class TabsComponent {
-
+  @Input() tabTitle=''
+  @Input() active = false
 }

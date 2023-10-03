@@ -11,7 +11,7 @@ export class NavComponent {
 
   }
 
-  openModal($event: Event){
+  onModalOpen($event: Event){
     $event.preventDefault()
     
     this.modal.toggleModal('auth')
