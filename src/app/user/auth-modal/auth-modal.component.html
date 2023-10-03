@@ -1,23 +1,14 @@
 <app-modal modalID="auth">
   <p class="text-2xl font-bold" heading>Your Account</p>
 
-       <!-- Tabs -->
-   <ul class="flex flex-wrap mb-4">
-    <li class="flex-auto text-center">
-      <a class="block rounded py-3 px-4 transition hover:text-white text-white
-          bg-indigo-400" href="#" (click)="showLoginForm()">Login</a>
-    </li>
-    <li class="flex-auto text-center">
-      <a class="block rounded py-3 px-4 transition hover:text-indigo-400"
-         href="#" (click)="showRegisterForm()">Register</a>
-    </li>
-  </ul>
-
+  
   <!-- Login Form -->
-  <ng-container *ngIf="showLogin">
+ <!--
+   <ng-container *ngIf="showLogin">
     <app-login></app-login>
   </ng-container>
   <ng-container *ngIf="!showLogin">
     <app-register></app-register>
   </ng-container>
+ -->
 </app-modal>
