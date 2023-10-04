@@ -7,14 +7,13 @@ import { FormGroup,FormControl } from '@angular/forms';
 })
 export class RegisterComponent {
 
-  registerFrom = new FormGroup({
+  registerForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     age: new FormControl(''),
     password: new FormControl(''),
     confirm_password: new FormControl(''),
     phoneNumber: new FormControl(''),
-
   })
 
   onRegister($event : Event){
