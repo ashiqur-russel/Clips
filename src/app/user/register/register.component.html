@@ -2,7 +2,10 @@
     <!-- Name -->
     <div class="mb-3">
       <label class="inline-block mb-2">Name</label>
-      <app-input></app-input>
+      <app-input
+      [control]="registerForm.controls.name"
+      >
+    </app-input>
 
     </div>
     <!-- Email -->
