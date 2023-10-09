@@ -21,7 +21,8 @@ import { InputComponent } from './input/input.component';
   exports:[
     ModalComponent,
     TabsComponent,
-    TabsContainerComponent
+    TabsContainerComponent,
+    InputComponent
   ],
   providers:[
     ModalService
